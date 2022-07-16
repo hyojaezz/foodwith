@@ -1,0 +1,63 @@
+*{margin:0;padding:0;list-style:none;box-sizing:border-box;}
+a{text-decoration:none;}
+.blind{border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; white-space: nowrap; }
+
+html{font-size:10px;line-height: 1.4;color:#1b1d21;}
+.inner{max-width:98rem;margin:0 auto;}
+
+/* .contents{min-width:98rem;} */
+/* header */
+.main_header{ position: fixed; top:0; left:0; width:100%; background:rgba(64,64,64,0.75); z-index:10;}
+.main_header .logo{line-height: 6.6rem;}
+
+/* main_section 슬라이더 영역 */
+.main_section .section_box{ background-color:#fff; }
+.main_section .section_box .img_box{width: 100%;height:75rem;margin:0 auto; background:url(../img/section_invite.jpg) no-repeat;background-size: cover;background-position: center center;}
+
+.main_section .section_box.create_box{background-color:#f9939d;}
+.main_section .section_box.create_box .img_box{width:98rem; height:82.2rem; margin:0 auto; background-image:url(../img/section_creator.jpg);}
+
+.main_section .section_box.store_box{background-color:#d5e43f;}
+.main_section .section_box.store_box .img_box{height:108.4rem; margin:0 auto; background-image:url(../img/section_store.jpg);}
+.main_section .section_box.store_box .img_box .store_list{ padding-top:30rem;text-align:center;font-size:0;}
+.main_section .section_box.store_box .img_box .store_list li{display:inline-block;max-width:23rem;margin:0 2rem 4rem 0;}
+.main_section .section_box.store_box .img_box .store_list li:nth-child(4n){margin-right:0;}
+.main_section .section_box.store_box .img_box .store_list li a{display:block;position:relative;}
+.main_section .section_box.store_box .img_box .store_list li a .sale_box{ display:none; position: absolute; top:0; left:0; width:100%; height: 100%; background:rgba(96,132,2,0.9); color:#fff; transition: all 0.5s; }
+.main_section .section_box.store_box .img_box .store_list li a .sale_box .list_per{ padding-top: 5rem; font-size:6.5rem; font-weight:700;; }
+.main_section .section_box.store_box .img_box .store_list li a .sale_box .list_time{ font-size:2rem; }
+.main_section .section_box.store_box .img_box .store_list li a:hover .sale_box{ display:block; }
+.main_section .section_box.store_box .img_box .store_list li img{border-radius:1rem;}
+.main_section .section_box.store_box .img_box .store_list li .txt_wrap {margin-top:2rem;}
+.main_section .section_box.store_box .img_box .store_list li .txt_wrap .list_tit{ width:22rem; padding:0 1rem; font-size:2rem; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+.main_section .section_box.store_box .img_box .store_list li .txt_wrap .list_price{font-size:2.8rem;font-weight:bold;}
+
+.main_section .section_box.recipe_box{position: relative;background-color:#b893f9;}
+.main_section .section_box.recipe_box .inner{padding:10rem 0 24.3rem;position:relative;z-index: 2;}
+
+
+.main_section .section_box.recipe_box:after{ content:''; position: absolute; top:0; left:0; width:100%; height:103rem; background: url(../img/pattern_recipe.png); background-position: center; background-repeat: repeat-x; z-index: 1; }
+.main_section .section_box.recipe_box .img_box{height:68.1rem; background-image: url(../img/section_recipe.png); background-size: contain; z-index: 2;}
+.main_section .section_box.recipe_box .img_box .link_wrap a {display: block; position: absolute; top: 60%; width: 48.5%; height: 48rem; transform: translateY(-50%);}
+.main_section .section_box.recipe_box .img_box .link_wrap a.second{ right:0 }
+.main_section .section_box.recipe_box .img_box .btn_recipe_all{ position: absolute; bottom:10rem; right:0; width:31rem; height:9.1rem; background: url(../img/go_recipe.gif) no-repeat; }
+.main_section .section_box.recipe_box .img_box .btn_recipe_all:hover{ background-image: url(../img/go_recipe_over.gif); }
+
+
+.main_section .section_box.faq_box{padding:10rem 0;background-color:#fff;}
+.main_section .section_box.faq_box .img_wrap{margin-bottom:3rem;text-align:center;}
+.main_section .section_box.faq_box .faq_list li{ border-top:0.1rem solid #a1a5ad; }
+.main_section .section_box.faq_box .faq_list li:last-child{ border-bottom:0.1rem solid #a1a5ad; }
+.main_section .section_box.faq_box .faq_list .txt_box{ position:relative; padding:0 0 0 2.5rem; }
+.main_section .section_box.faq_box .faq_list .txt_box .faq_tit { width: 100%; padding: 2.5rem 8.2rem 2.5rem 3rem; font-size: 2rem; color: #1b1d21; line-height: 1.4; font-weight: bold; position: relative; display: inline-block; letter-spacing: -0.14rem; }
+.main_section .section_box.faq_box .faq_list .txt_box .faq_tit:after{ content: ''; width: 8rem; height: 100%; background-color: #fff; position: absolute; top: 0; right: 0; cursor: pointer; }
+.main_section .section_box.faq_box .faq_list .txt_box .faq_tit:before{ content: ''; width: 8rem; height: 7.8rem; background: url(/img/icon_arrow_up.gif) no-repeat center center; background-color: #fff; position: absolute; top: 0; right: 0; z-index:1; cursor: pointer; }
+.main_section .section_box.faq_box .faq_list .txt_box *[aria-expanded='false']:before {background-image: url(/img/icon_arrow_down.gif);}
+.main_section .section_box.faq_box .faq_list .txt_box .icon{ content: ''; width: 2rem; height: 2rem; background: url(/img/icon_question.gif) no-repeat; vertical-align: -0.1rem; position: absolute; top: 2.8rem; left: 2.4rem; }
+.main_section .section_box.faq_box .faq_list .txt_box *[aria-expanded='true'] + .answer_box{display:block;}
+.main_section .section_box.faq_box .faq_list .txt_box .answer_box{display:none;min-width: 980px; background: #f7f8fa; margin-left: -24px; padding: 2.5rem 2.4rem; }
+.main_section .section_box.faq_box .faq_list .txt_box .answer_box .txt{ position: relative; padding-left:3rem; line-height: 1.4; font-size:1.6rem; color:#60656e; }
+.main_section .section_box.faq_box .faq_list .txt_box .answer_box .txt:before{ content: ''; width: 2rem; height: 2rem; background: url(/img/icon_answer.gif) no-repeat; vertical-align: -0.1rem; position: absolute; top: 0.2rem; left: 0; }
+
+footer{background-color:#e0e4eb;text-align:center;}
+footer .copyright{padding:2.7rem 0;font-size:1.8rem;color:#70757d;}
