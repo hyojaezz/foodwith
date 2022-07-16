@@ -52,12 +52,12 @@ html{font-size:10px;line-height: 1.4;color:#1b1d21;}
 .main_section .section_box.faq_box .faq_list .txt_box .faq_tit { width: 100%; padding: 2.5rem 8.2rem 2.5rem 3rem; font-size: 2rem; color: #1b1d21; line-height: 1.4; font-weight: bold; position: relative; display: inline-block; letter-spacing: -0.14rem; }
 .main_section .section_box.faq_box .faq_list .txt_box .faq_tit:after{ content: ''; width: 8rem; height: 100%; background-color: #fff; position: absolute; top: 0; right: 0; cursor: pointer; }
 .main_section .section_box.faq_box .faq_list .txt_box .faq_tit:before{ content: ''; width: 8rem; height: 7.8rem; background: url(/img/icon_arrow_up.gif) no-repeat center center; background-color: #fff; position: absolute; top: 0; right: 0; z-index:1; cursor: pointer; }
-.main_section .section_box.faq_box .faq_list .txt_box *[aria-expanded='false']:before {background-image: url(/img/icon_arrow_down.gif);}
-.main_section .section_box.faq_box .faq_list .txt_box .icon{ content: ''; width: 2rem; height: 2rem; background: url(/img/icon_question.gif) no-repeat; vertical-align: -0.1rem; position: absolute; top: 2.8rem; left: 2.4rem; }
+.main_section .section_box.faq_box .faq_list .txt_box *[aria-expanded='false']:before {background-image: url(../img/icon_arrow_down.gif);}
+.main_section .section_box.faq_box .faq_list .txt_box .icon{ content: ''; width: 2rem; height: 2rem; background: url(../img/icon_question.gif) no-repeat; vertical-align: -0.1rem; position: absolute; top: 2.8rem; left: 2.4rem; }
 .main_section .section_box.faq_box .faq_list .txt_box *[aria-expanded='true'] + .answer_box{display:block;}
 .main_section .section_box.faq_box .faq_list .txt_box .answer_box{display:none;min-width: 980px; background: #f7f8fa; margin-left: -24px; padding: 2.5rem 2.4rem; }
 .main_section .section_box.faq_box .faq_list .txt_box .answer_box .txt{ position: relative; padding-left:3rem; line-height: 1.4; font-size:1.6rem; color:#60656e; }
-.main_section .section_box.faq_box .faq_list .txt_box .answer_box .txt:before{ content: ''; width: 2rem; height: 2rem; background: url(/img/icon_answer.gif) no-repeat; vertical-align: -0.1rem; position: absolute; top: 0.2rem; left: 0; }
+.main_section .section_box.faq_box .faq_list .txt_box .answer_box .txt:before{ content: ''; width: 2rem; height: 2rem; background: url(../img/icon_answer.gif) no-repeat; vertical-align: -0.1rem; position: absolute; top: 0.2rem; left: 0; }
 
 footer{background-color:#e0e4eb;text-align:center;}
 footer .copyright{padding:2.7rem 0;font-size:1.8rem;color:#70757d;}
